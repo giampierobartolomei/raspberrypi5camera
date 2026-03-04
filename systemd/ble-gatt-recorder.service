@@ -1,0 +1,21 @@
+[Unit]
+Description=BLE GATT Camera Recorder (rec/stp)
+After=bluetooth.service
+Wants=bluetooth.service
+
+[Service]
+Type=simple
+# Imposta la directory di lavoro sulla cartella del progetto
+WorkingDirectory=/home/user/raspberrypizero2w-cameraglasses/ble
+# Avvia lo script corretto in modalità unbuffered
+ExecStart=/usr/bin/python3 -u /home/user/raspberrypizero2w-cameraglasses/ble/ble_sync.py
+Restart=always
+RestartSec=2
+# Facoltativo: forza l’output non bufferizzato anche via variabile d’ambiente
+Environment=PYTHONUNBUFFERED=1
+# Invia stdout/stderr al journal
+StandardOutput=journal
+StandardError=journal
+
+[Install]
+WantedBy=multi-user.target

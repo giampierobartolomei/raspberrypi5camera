@@ -1,0 +1,100 @@
+==============================
+ SYSTEM ENVIRONMENT SNAPSHOT 
+==============================
+Mon  2 Feb 16:50:36 CET 2026
+
+### OS RELEASE
+PRETTY_NAME="Raspbian GNU/Linux 13 (trixie)"
+NAME="Raspbian GNU/Linux"
+VERSION_ID="13"
+VERSION="13 (trixie)"
+VERSION_CODENAME=trixie
+DEBIAN_VERSION_FULL=13.1
+ID=raspbian
+ID_LIKE=debian
+HOME_URL="http://www.raspbian.org/"
+SUPPORT_URL="http://www.raspbian.org/RaspbianForums"
+BUG_REPORT_URL="http://www.raspbian.org/RaspbianBugs"
+
+### KERNEL
+Linux rpi-zero2 6.12.47+rpt-rpi-v7 #1 SMP Raspbian 1:6.12.47-1+rpt1 (2025-09-16) armv7l GNU/Linux
+
+### HARDWARE
+Hardware	: BCM2835
+Revision	: 902120
+Model		: Raspberry Pi Zero 2 W Rev 1.0
+
+### PYTHON
+Python 3.13.5
+/usr/bin/python3
+Executable: /usr/bin/python3
+Full version: 3.13.5 (main, Jun 25 2025, 18:55:22) [GCC 14.2.0]
+Platform: Linux-6.12.47+rpt-rpi-v7-armv7l-with-glibc2.41
+
+### APT PACKAGES (RELEVANT)
+ii  bluez                                5.82-1.1+rpt1                           armhf        Bluetooth tools and daemons
+ii  bluez-firmware                       1.2-13+rpt2                             all          Firmware for Bluetooth devices
+ii  ffmpeg                               8:7.1.3-0+deb13u1+rpt1                  armhf        Tools for transcoding, streaming and playing of multimedia files
+ii  firmware-brcm80211                   1:20241210-1+rpt4                       all          Binary firmware for Broadcom/Cypress 802.11 wireless cards
+ii  python3-dbus                         1.4.0-1                                 armhf        simple interprocess messaging system (Python 3 interface)
+ii  python3-gi                           3.50.0-4                                armhf        Python 3 bindings for gobject-introspection libraries
+ii  v4l-utils                            1.30.1-1                                armhf        Collection of command line video4linux utilities
+
+### BLUETOOTHD PROCESS
+root       515  0.0  0.5  10440  2496 ?        Ss   16:35   0:00 /usr/libexec/bluetooth/bluetoothd
+
+### HCI STATUS
+hci0:	Type: Primary  Bus: UART
+	BD Address: B8:27:EB:4C:84:9C  ACL MTU: 1021:8  SCO MTU: 64:1
+	DOWN 
+	RX bytes:2612 acl:0 sco:0 events:234 errors:0
+	TX bytes:47667 acl:0 sco:0 commands:234 errors:0
+
+
+### BLUEZ DBUS MANAGERS
+NAME                   TYPE      SIGNATURE RESULT/VALUE FLAGS
+.RegisterApplication   method    oa{sv}    -            -
+.UnregisterApplication method    o         -            -
+NAME                            TYPE      SIGNATURE RESULT/VALUE                                                             FLAGS
+.RegisterAdvertisement          method    oa{sv}    -                                                                        -
+.UnregisterAdvertisement        method    o         -                                                                        -
+.ActiveInstances                property  y         0                                                                        emits-change
+.SupportedCapabilities          property  a{sv}     4 "MinTxPower" n 7 "MaxTxPower" n 0 "MaxAdvLen" y 31 "MaxScnRspLen" y 31 emits-change
+.SupportedFeatures              property  as        0                                                                        emits-change
+.SupportedIncludes              property  as        3 "tx-power" "appearance" "local-name"                                   emits-change
+.SupportedInstances             property  y         5                                                                        emits-change
+.SupportedSecondaryChannels     property  as        -                                                                        emits-change
+
+### BROADCOM FIRMWARE FILES
+-rw-r--r-- 1 root root  30K Oct  2 19:34 BCM43430A1.hcd
+lrwxrwxrwx 1 root root   14 Oct  2 19:34 BCM43430A1.raspberrypi,3-model-b.hcd -> BCM43430A1.hcd
+lrwxrwxrwx 1 root root   27 Oct  2 19:34 BCM43430A1.raspberrypi,model-zero-2-w.hcd -> ../synaptics/SYN43430A1.hcd
+lrwxrwxrwx 1 root root   14 Oct  2 19:34 BCM43430A1.raspberrypi,model-zero-w.hcd -> BCM43430A1.hcd
+-rw-r--r-- 1 root root  44K Oct  2 19:34 BCM43430B0.hcd
+lrwxrwxrwx 1 root root   27 Oct  2 19:34 BCM43430B0.raspberrypi,model-zero-2-w.hcd -> ../synaptics/SYN43430B0.hcd
+-rw-r--r-- 1 root root 6.6K Oct  2 19:34 BCM4343A2.hcd
+lrwxrwxrwx 1 root root   13 Oct  2 19:34 BCM4343A2.raspberrypi,0-compute-module.hcd -> BCM4343A2.hcd
+-rw-r--r-- 1 root root  63K Oct  2 19:34 BCM4345C0.hcd
+lrwxrwxrwx 1 root root   13 Oct  2 19:34 BCM4345C0.raspberrypi,3-model-a-plus.hcd -> BCM4345C0.hcd
+lrwxrwxrwx 1 root root   13 Oct  2 19:34 BCM4345C0.raspberrypi,3-model-b-plus.hcd -> BCM4345C0.hcd
+lrwxrwxrwx 1 root root   13 Oct  2 19:34 BCM4345C0.raspberrypi,4-compute-module.hcd -> BCM4345C0.hcd
+lrwxrwxrwx 1 root root   13 Oct  2 19:34 BCM4345C0.raspberrypi,4-model-b.hcd -> BCM4345C0.hcd
+lrwxrwxrwx 1 root root   13 Oct  2 19:34 BCM4345C0.raspberrypi,500.hcd -> BCM4345C0.hcd
+lrwxrwxrwx 1 root root   13 Oct  2 19:34 BCM4345C0.raspberrypi,5-compute-module.hcd -> BCM4345C0.hcd
+lrwxrwxrwx 1 root root   13 Oct  2 19:34 BCM4345C0.raspberrypi,5-model-b.hcd -> BCM4345C0.hcd
+-rw-r--r-- 1 root root  55K Oct  2 19:34 BCM4345C5.hcd
+lrwxrwxrwx 1 root root   13 Oct  2 19:34 BCM4345C5.raspberrypi,400.hcd -> BCM4345C5.hcd
+lrwxrwxrwx 1 root root   13 Oct  2 19:34 BCM4345C5.raspberrypi,4-compute-module.hcd -> BCM4345C5.hcd
+-rw-r--r-- 1 root root  94K Nov 12 17:36 bcm43xx-0.fw
+-rw-r--r-- 1 root root  180 Nov 12 17:36 bcm43xx_hdr-0.fw
+
+### CAMERA CAPABILITIES (/dev/video0)
+
+### FFMPEG VERSION
+ffmpeg version 7.1.3-0+deb13u1+rpt1 Copyright (c) 2000-2025 the FFmpeg developers
+built with gcc 14 (Raspbian 14.2.0-19+rpi1)
+configuration: --prefix=/usr --extra-version=0+deb13u1+rpt1 --toolchain=hardened --incdir=/usr/include/arm-linux-gnueabihf --enable-gpl --disable-stripping --disable-libmfx --disable-mmal --disable-omx --enable-gnutls --enable-libaom --enable-libass --enable-libbs2b --enable-libcdio --enable-libcodec2 --enable-libdav1d --enable-libflite --enable-libfontconfig --enable-libfreetype --enable-libfribidi --enable-libglslang --enable-libgme --enable-libgsm --enable-libharfbuzz --enable-libmp3lame --enable-libmysofa --enable-libopenjpeg --enable-libopenmpt --enable-libopus --enable-librubberband --enable-libshine --enable-libsnappy --enable-libsoxr --enable-libspeex --enable-libtheora --enable-libtwolame --enable-libvidstab --enable-libvorbis --enable-libvpx --enable-libwebp --enable-libx265 --enable-libxml2 --enable-libxvid --enable-libzimg --enable-openal --enable-opencl --enable-opengl --disable-sndio --disable-libvpl --enable-neon --enable-v4l2-request --enable-libudev --enable-epoxy --enable-libdc1394 --enable-libdrm --enable-libiec61883 --enable-vout-drm --enable-chromaprint --enable-frei0r --enable-ladspa --enable-libbluray --enable-libcaca --enable-libdvdnav --enable-libdvdread --enable-libjack --enable-libpulse --enable-librabbitmq --enable-librist --enable-libsrt --enable-libssh --enable-libsvtav1 --enable-libx264 --enable-libzmq --enable-libzvbi --enable-lv2 --enable-sand --enable-sdl2 --enable-libplacebo --enable-librav1e --enable-pocketsphinx --enable-librsvg --enable-libjxl --enable-shared --libdir=/usr/lib/arm-linux-gnueabihf --cpu=arm1176jzf-s --arch=arm
+libavutil      59. 39.100 / 59. 39.100
+libavcodec     61. 19.101 / 61. 19.101
+
+### END OF SNAPSHOT
