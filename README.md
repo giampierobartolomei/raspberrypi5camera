@@ -20,7 +20,7 @@ Records MJPG input at 800x600 @ 20 fps and saves MP4 (H.264) locally.
 ## 1) Install OS (Raspberry Pi OS Lite) and SSH Access
 1. Download Raspberry Pi Imager. (https://www.raspberrypi.com/software/)
 2. Insert your micro-SD card and open Raspberry Pi Imager.
-3. Select Raspberry Pi Zero 2 W
+3. Select Raspberry Pi 5
 4. In the OS Section: Raspberry Pi OS (other) -> Select Raspberry Pi OS Lite (32-bit) (64 if using raspberry pi 5)
 5. Select your micro-SD storage.
 6. Set hostname (example: `rpi5`) and credentials (username: 'user', this is an important point). Then set Wifi settings (SSH ACTIVE!, pi connect OFF).
